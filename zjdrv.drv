@@ -20,9 +20,9 @@ VariablePaperSize Yes
 
 // cutter
 Option "CutMedia/Cut Media" PickOne AnySetup 10
- *Choice "None/No cutting" "<</CutMedia 0>>setpagedevice"
+  Choice "None/No cutting" "<</CutMedia 0>>setpagedevice"
   Choice "EndOfPage/Cut at every page" "<</CutMedia 4>>setpagedevice"
-  Choice "EndOfJob/Cut at every job" "<</CutMedia 2>>setpagedevice"
+ *Choice "EndOfJob/Cut at every job" "<</CutMedia 2>>setpagedevice"
 
 Option "Resolution/Resolution" PickOne AnySetup 10
  *Choice "203x203dpi/203 DPI Grayscale" "<</HWResolution[203 203]/cupsColorSpace 3>>setpagedevice"
